@@ -78,7 +78,7 @@ body{
 
 .section-1{
     height: 500px;
-    background-color: white;
+    background-color: rgb(50, 119, 131);
 
 }
 
@@ -207,7 +207,7 @@ body{
 
 .news-url > a{
 
-    color: #ffffff; 
+    color: #9ac9db; 
 }
 
 hr{
