@@ -30,23 +30,51 @@
 <!--BARRA SUPERIOR -->
         <v-app-bar 
             app
-            color="blue-grey lighten-4"
+            color= "light-green darken-4"
+            src="../assets/Barrasuperior4.png"
             dark
             prominent
             shrink-on-scroll
             fade-img-on-scroll
-            scroll-threshold="300"
-            extension-height="100"
+            scroll-threshold="200"
+            extension-height="500"
+            weight="200"
+            absolute
             
         >
+
+
             <v-app-bar-nav-icon @click="drawer= !drawer"></v-app-bar-nav-icon>
-    
+
+            <v-spacer></v-spacer>
+
+            <v-btn icon>
+              <v-icon>mdi-instagram </v-icon>
+            </v-btn>
+
+            <v-btn icon>
+              <v-icon>mdi-twitter</v-icon>
+            </v-btn>
+
+            <v-btn icon>
+              <v-icon>mdi-facebook</v-icon>
+        </v-btn>
+
+        <!-- <v-btn @click="CambiarTema" text rounded>Cambiar tema</v-btn>
+     -->
         </v-app-bar>
     </div> 
 </template>
 
 <script>
 export default {
+
+  // methods: {
+  //     CambiarTema(){
+  //       this.$vuetify.theme.dark = !this.$vuetify.theme.dark
+  //     }
+  //   },
+
     data(){
         return{
             drawer: false, 
@@ -56,5 +84,6 @@ export default {
             ]
         }
     }
+    
 }
 </script>

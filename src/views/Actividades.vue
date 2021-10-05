@@ -8,36 +8,300 @@
             </v-row>
         </v-container>
         <div class="d-flex justify-center flex-wrap" tile>
-            <v-card v-for="plan in planes" :key="plan.name" class="mx-4 my-2" max-width="300">
-                <div class="d-flex justify-center mt-3">
-                    <v-avatar size="200">
-                        <img :src="plan.img" :alt="plan.name"/>
-                    </v-avatar>
-                </div>
-                
-                <v-card-text>
-                    <h2 class="texts-h6 red--text">{{plan.name}}</h2>
-                    <p class="text-caption">{{plan.text}}</p>
-                </v-card-text>
-            </v-card>
+    <v-card
+    class="mx-auto"
+    max-width="344"
+  >
+    <v-img
+      src="../assets/laguna.jpg"
+      height="200px"
+    ></v-img>
+
+    <v-card-title>
+      Laguna de Guatavita
+    </v-card-title>
+
+    <v-card-subtitle>
+      A hora y media de Bogotá!
+    </v-card-subtitle>
+
+    <v-card-actions>
+      <v-btn
+        color="orange lighten-2"
+        text
+      >
+        Más
+      </v-btn>
+
+      <v-spacer></v-spacer>
+
+      <v-btn
+        icon
+        @click="show = !show"
+      >
+        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+      </v-btn>
+    </v-card-actions>
+
+    <v-expand-transition>
+      <div v-show="show">
+        <v-divider></v-divider>
+
+        <v-card-text 
+        class="
+        font-weight-light
+        text-justify
+        ">
+          Un hermoso cuerpo de aguas color verde esmeralda en las que se desenvuelve la leyenda de El Dorado, un misticismo que nació hace cientos de años con los indígenas Muiscas y se reforzó con la colonia española.
+          Para llegar al municipio de Guatavita desde Bogotá, debes ir a la Terminal de Transportes Salitre y tomar un bus de Flota Valle de Tenza.
+          Tarifas: colombianos $13.000 COP y extranjeros $18.000 COP. Precios sujetos a cambio.
+        </v-card-text>
+      </div>
+    </v-expand-transition>
+  </v-card>
+
+<v-card
+    class="mx-auto"
+    max-width="344"
+  >
+    <v-img
+      src="../assets/laguna.jpg"
+      height="200px"
+    ></v-img>
+
+    <v-card-title>
+      La Chorrera de Choachí
+    </v-card-title>
+
+    <v-card-subtitle>
+      A hora y media de Bogotá!
+    </v-card-subtitle>
+
+    <v-card-actions>
+      <v-btn
+        color="orange lighten-2"
+        text
+      >
+        Más
+      </v-btn>
+
+      <v-spacer></v-spacer>
+
+      <v-btn
+        icon
+        @click="show = !show"
+      >
+        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+      </v-btn>
+    </v-card-actions>
+
+    <v-expand-transition>
+      <div v-show="show">
+        <v-divider></v-divider>
+
+        <v-card-text>
+          Un hermoso cuerpo de aguas color verde esmeralda en las que se desenvuelve la leyenda de El Dorado, un misticismo que nació hace cientos de años con los indígenas Muiscas y se reforzó con la colonia española.
+        </v-card-text>
+      </div>
+    </v-expand-transition>
+  </v-card>
+
+  <v-card
+    class="mx-auto"
+    max-width="344"
+  >
+    <v-img
+      src="../assets/laguna.jpg"
+      height="200px"
+    ></v-img>
+
+    <v-card-title>
+      Laguna de Guatavita
+    </v-card-title>
+
+    <v-card-subtitle>
+      A hora y media de Bogotá!
+    </v-card-subtitle>
+
+    <v-card-actions>
+      <v-btn
+        color="orange lighten-2"
+        text
+      >
+        Más
+      </v-btn>
+
+      <v-spacer></v-spacer>
+
+      <v-btn
+        icon
+        @click="show = !show"
+      >
+        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+      </v-btn>
+    </v-card-actions>
+
+    <v-expand-transition>
+      <div v-show="show">
+        <v-divider></v-divider>
+
+        <v-card-text>
+          Un hermoso cuerpo de aguas color verde esmeralda en las que se desenvuelve la leyenda de El Dorado, un misticismo que nació hace cientos de años con los indígenas Muiscas y se reforzó con la colonia española.
+        </v-card-text>
+      </div>
+    </v-expand-transition>
+  </v-card>
+
+  <v-card
+    class="mx-auto"
+    max-width="344"
+  >
+    <v-img
+      src="../assets/laguna.jpg"
+      height="200px"
+    ></v-img>
+
+    <v-card-title>
+      Laguna de Guatavita
+    </v-card-title>
+
+    <v-card-subtitle>
+      A hora y media de Bogotá!
+    </v-card-subtitle>
+
+    <v-card-actions>
+      <v-btn
+        color="orange lighten-2"
+        text
+      >
+        Más
+      </v-btn>
+
+      <v-spacer></v-spacer>
+
+      <v-btn
+        icon
+        @click="show = !show"
+      >
+        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+      </v-btn>
+    </v-card-actions>
+
+    <v-expand-transition>
+      <div v-show="show">
+        <v-divider></v-divider>
+
+        <v-card-text>
+          Un hermoso cuerpo de aguas color verde esmeralda en las que se desenvuelve la leyenda de El Dorado, un misticismo que nació hace cientos de años con los indígenas Muiscas y se reforzó con la colonia española.
+        </v-card-text>
+      </div>
+    </v-expand-transition>
+  </v-card>
+
+  <v-card
+    class="mx-auto"
+    max-width="344"
+  >
+    <v-img
+      src="../assets/laguna.jpg"
+      height="200px"
+    ></v-img>
+
+    <v-card-title>
+      Laguna de Guatavita
+    </v-card-title>
+
+    <v-card-subtitle>
+      A hora y media de Bogotá!
+    </v-card-subtitle>
+
+    <v-card-actions>
+      <v-btn
+        color="orange lighten-2"
+        text
+      >
+        Más
+      </v-btn>
+
+      <v-spacer></v-spacer>
+
+      <v-btn
+        icon
+        @click="show = !show"
+      >
+        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+      </v-btn>
+    </v-card-actions>
+
+    <v-expand-transition>
+      <div v-show="show">
+        <v-divider></v-divider>
+
+        <v-card-text>
+          Un hermoso cuerpo de aguas color verde esmeralda en las que se desenvuelve la leyenda de El Dorado, un misticismo que nació hace cientos de años con los indígenas Muiscas y se reforzó con la colonia española.
+        </v-card-text>
+      </div>
+    </v-expand-transition>
+  </v-card>
+
+     
+  <v-card
+    class="mx-auto"
+    max-width="344"
+    
+  >
+    <v-img
+      src="../assets/laguna.jpg"
+      height="200px"
+    ></v-img>
+
+    <v-card-title>
+      Laguna de Guatavita
+    </v-card-title>
+
+    <v-card-subtitle>
+      A hora y media de Bogotá!
+    </v-card-subtitle>
+
+    <v-card-actions>
+      <v-btn
+        color="orange lighten-2"
+        text
+      >
+        Más
+      </v-btn>
+
+      <v-spacer></v-spacer>
+
+      <v-btn
+        icon
+        @click="show = !show"
+      >
+        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+      </v-btn>
+    </v-card-actions>
+
+    <v-expand-transition>
+      <div v-show="show">
+        <v-divider></v-divider>
+
+        <v-card-text>
+          Un hermoso cuerpo de aguas color verde esmeralda en las que se desenvuelve la leyenda de El Dorado, un misticismo que nació hace cientos de años con los indígenas Muiscas y se reforzó con la colonia española.
+        </v-card-text>
+      </div>
+    </v-expand-transition>
+  </v-card>
+  
         </div>
     </div>
 </template>
 
+
 <script>
-export default {
-    name: "Actividades",
-    components:{},
-    data(){
-        return{
-            planes:[
-                {
-                    name: "Guatavita",
-                    img: require("../assets/laguna.jpg"),
-                    text: "La laguna de guatavita se encuenta a x kilometros de Bogotá...etc"
-                }
-            ]
-        }
-    }
-};
+  export default {
+    data: () => ({
+      show: false,
+    }),
+  }
 </script>
+

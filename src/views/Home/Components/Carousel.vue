@@ -8,13 +8,13 @@
 
   <v-carousel-item v-for="image in images" :key="image.url" :src="image.url">
     <v-row align="center" justify="center">
-      <h1
+      <!-- <h1
         class="
         d-inline
-        lime
+        green lighten-5
         accent-4
         text-h2
-        white--text        
+        black--text        
         rounded-xl
         mt-14 
         mb-n12
@@ -41,8 +41,8 @@
           px-9
         "      
       >
-      Portal informativo
-      </h2> 
+      
+      </h2>  -->
     </v-row>
   </v-carousel-item>
   </v-carousel>
@@ -63,7 +63,7 @@
 </script>
 
 <style>
-.textShadow{
+/* .textShadow{
   text-shadow: 4px 3px rgba(red, green, blue, alpha);
-}
+} */
 </style>
