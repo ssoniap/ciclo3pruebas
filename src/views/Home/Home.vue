@@ -3,7 +3,10 @@
   <my-header>
     <carousel/>
   </my-header>
-  <router-view></router-view>
+  <router-view>
+
+    
+  </router-view>
   <my-footer>
     <Footer/>
   </my-footer>

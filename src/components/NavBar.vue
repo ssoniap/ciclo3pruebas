@@ -28,10 +28,11 @@
         </v-navigation-drawer>
 
 <!--BARRA SUPERIOR -->
-        <v-app-bar 
+      
+        <v-app-bar         
             app
             color= "light-green darken-4"
-            src="../assets/Barrasuperior4.png"
+            src="../assets/imgs/Barrasuperior4.png"
             dark
             prominent
             shrink-on-scroll
@@ -46,22 +47,12 @@
 
             <v-app-bar-nav-icon @click="drawer= !drawer"></v-app-bar-nav-icon>
 
-            <v-spacer></v-spacer>
-
-            <v-btn icon>
-              <v-icon>mdi-instagram </v-icon>
-            </v-btn>
-
-            <v-btn icon>
-              <v-icon>mdi-twitter</v-icon>
-            </v-btn>
-
-            <v-btn icon>
-              <v-icon>mdi-facebook</v-icon>
-        </v-btn>
+            
+            
 
         <!-- <v-btn @click="CambiarTema" text rounded>Cambiar tema</v-btn>
      -->
+        
         </v-app-bar>
     </div> 
 </template>
@@ -81,6 +72,7 @@ export default {
             items: [
                 {title: "Home", icon: "mdi-home", name: "Home"},
                 {title: "Actividades", icon: "mdi-clipboard-list", name: "Actividades"},
+                {title: "Blog", icon: "mdi-dialpad", name: "Blog"},
             ]
         }
     }

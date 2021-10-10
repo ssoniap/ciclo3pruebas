@@ -6,44 +6,14 @@
     show-arrows-on-hover
   >    
 
-  <v-carousel-item v-for="image in images" :key="image.url" :src="image.url">
-    <v-row align="center" justify="center">
-      <!-- <h1
-        class="
-        d-inline
-        green lighten-5
-        accent-4
-        text-h2
-        black--text        
-        rounded-xl
-        mt-14 
-        mb-n12
-        px-9 
-        pt-3
-        pb-9
-        font-weight-black 
-               
-        "
-      >
-        Ecoturismo
-        <span class="font-weight-regural">Cundinamarca</span>
-      </h1>
-    </v-row>
-    <v-row align="center" justify="center">
-      <h2
-        class="
-          textShadow
-          grey--text
-          text-h5
-          font-weight-black
-          d-inline
-          rounded-xl
-          px-9
-        "      
-      >
-      
-      </h2>  -->
-    </v-row>
+  <v-carousel-item v-for="image in images" :key="image.url" :src="image.url">  
+    
+      <v-img
+      max-height="250"
+      max-width="250"
+      class="fill-height ma-0"      
+      src="../../../assets/imgs/Logo_redondo1.png" alt="Logo"></v-img>
+    
   </v-carousel-item>
   </v-carousel>
 </template>
@@ -53,9 +23,11 @@
     data () {
       return {
         images:[
-          {url: require("../../../assets/chingaza_1_4_0.jpg")},
-          {url: require("../../../assets/laguna.jpg")},
-          {url: require("../../../assets/sendero-penas-del-aserradero.jpg")},
+          {url: require("../../../assets/imgs/paramo-de-chingaza.jpg")},
+          {url: require("../../../assets/imgs/suesca-cundinamarca.jpg")},
+          {url: require("../../../assets/imgs/laguna.jpg")},
+          {url: require("../../../assets/imgs/en-la-chorrera-de-choachi.jpg")},
+          {url: require("../../../assets/imgs/suesca-cun.png")},
         ],
       }
     },
